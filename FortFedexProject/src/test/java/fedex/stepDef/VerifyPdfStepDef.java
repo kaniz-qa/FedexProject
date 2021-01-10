@@ -1,40 +1,44 @@
 package fedex.stepDef;
 
 import fedex.actions.VerifyPdfActions;
+import fedex.utilities.SetupDrivers;
 import io.cucumber.java.en.*;
 
 public class VerifyPdfStepDef {
 
 	VerifyPdfActions pdfAct = new VerifyPdfActions();
 	
-	@Given("user navigate the url")
-	public void user_navigate_the_url() {
+	@Given("Fedex Homepage is launched.")
+	public void fedex_Homepage_is_launched() {
 		pdfAct.fedexHomePage();
+		System.out.println("driver------------"+ SetupDrivers.chromeDriver);
 	    
 	}
-	@When("click on design and print menu")
-	public void click_on_design_and_print_menu() {
-		pdfAct.designPrintMenu();
-	}
 
-	@When("select Get coupon and deals")
-	public void select_Get_coupon_and_deals() {
-		pdfAct.cuponSubmenu();
-	}
-
-
-	@When("scroll down and click on get coupon from  courier service options.")
-	public void scroll_down_and_click_on_get_coupon_from_courier_service_options() {
-		pdfAct.getCuponBtn();
-	}
-	
-	
-	
-	@When("click on download")
-	public void click_on_download() {
-	    
+	@When("click on search icon")
+	public void click_on_search_icon() {
+		pdfAct.searchIcon();
 	    
 	}
+
+	@When("input tracking number")
+	public void input_tracking_number() {
+		pdfAct.searchText();
+	    
+	}
+
+	@When("press enter")
+	public void press_enter() {
+		pdfAct.pressEnter();
+	    
+	}
+
+	@Then("user can see error msg")
+	public void user_can_see_error_msg() {
+	   
+	    
+	}
+
 
 	
 }

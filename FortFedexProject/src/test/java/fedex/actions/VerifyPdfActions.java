@@ -2,6 +2,7 @@ package fedex.actions;
 
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.support.PageFactory;
 
 import fedex.elements.VerifyPdfElements;
@@ -24,23 +25,21 @@ public class VerifyPdfActions {
 		SetupDrivers.chromeDriver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 	}
 	
-	public void designPrintMenu() {
-		pdfEle.designAndPrintMenu.click();
+	
+	public void searchIcon() {
 		
+		pdfEle.searchIcon.click();
 	}
 	
-	public void cuponSubmenu() {
-		pdfEle.cuponSubMenu.click();
+	public void searchText() {
 		
+		pdfEle.searchText.sendKeys("34534632656");
 	}
 	
-	
-	
-	
-	public void getCuponBtn() {
-		pdfEle.getCuponBtn.click();
+	public void pressEnter() {
+		
+		pdfEle.searchText.sendKeys(Keys.ENTER);
 	}
-	
 	
 	
 	

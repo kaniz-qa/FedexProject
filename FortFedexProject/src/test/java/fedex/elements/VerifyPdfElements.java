@@ -7,14 +7,15 @@ public class VerifyPdfElements {
 
 	
 	@FindBy(xpath = "//span[contains(text(),'Design & Print')]")
-	public WebElement designAndPrintMenu;
-	
-	@FindBy(xpath = "//a[contains(text(),'Get Coupons & Deals')]")
-	public WebElement cuponSubMenu;
+	public WebElement searchIcon;
 	
 	
-	@FindBy(xpath = "//a[contains(text(),'get coupon')]")
-	public WebElement getCuponBtn;
+	@FindBy(xpath = "//input[@id='fxg-search-text']")
+	public WebElement searchText;
+	
+	
+
+	
 	
 	
 }
