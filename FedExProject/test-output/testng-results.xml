@@ -2,15 +2,15 @@
 <testng-results skipped="0" failed="0" ignored="0" total="0" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="117" started-at="2021-01-09T06:12:39Z" finished-at="2021-01-09T06:12:39Z">
+  <suite name="Suite" duration-ms="117" started-at="2021-01-12T03:34:59Z" finished-at="2021-01-12T03:34:59Z">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:fedex.runner.FedExRunner@dc24521]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:fedex.runner.FedExRunner@66480dd7]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Default test" duration-ms="117" started-at="2021-01-09T06:12:39Z" finished-at="2021-01-09T06:12:39Z">
+    <test name="Test" duration-ms="117" started-at="2021-01-12T03:34:59Z" finished-at="2021-01-12T03:34:59Z">
       <class name="fedex.runner.FedExRunner">
-        <test-method status="FAIL" signature="setUpClass()[pri:0, instance:fedex.runner.FedExRunner@dc24521]" name="setUpClass" is-config="true" duration-ms="91" started-at="2021-01-09T06:12:39Z" finished-at="2021-01-09T06:12:39Z">
+        <test-method status="FAIL" signature="setUpClass()[pri:0, instance:fedex.runner.FedExRunner@66480dd7]" name="setUpClass" is-config="true" duration-ms="93" started-at="2021-01-12T03:34:59Z" finished-at="2021-01-12T03:34:59Z">
           <exception class="io.cucumber.core.exception.CucumberException">
             <message>
               <![CDATA[Couldn't load plugin class: com.cucumber.listener.ExtentCucumberFormatter]]>
@@ -79,15 +79,15 @@ at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="SKIP" signature="generateExtentReport()[pri:0, instance:fedex.runner.FedExRunner@dc24521]" name="generateExtentReport" is-config="true" duration-ms="0" started-at="2021-01-09T06:12:39Z" finished-at="2021-01-09T06:12:39Z">
+        <test-method status="SKIP" signature="generateExtentReport()[pri:0, instance:fedex.runner.FedExRunner@66480dd7]" name="generateExtentReport" is-config="true" duration-ms="0" started-at="2021-01-12T03:34:59Z" finished-at="2021-01-12T03:34:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- generateExtentReport -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:fedex.runner.FedExRunner@dc24521]" name="tearDownClass" is-config="true" duration-ms="0" started-at="2021-01-09T06:12:39Z" finished-at="2021-01-09T06:12:39Z">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:fedex.runner.FedExRunner@66480dd7]" name="tearDownClass" is-config="true" duration-ms="0" started-at="2021-01-12T03:34:59Z" finished-at="2021-01-12T03:34:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
       </class> <!-- fedex.runner.FedExRunner -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

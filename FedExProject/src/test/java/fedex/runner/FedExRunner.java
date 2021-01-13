@@ -23,7 +23,7 @@ public class FedExRunner extends AbstractTestNGCucumberTests {
 
 	@AfterClass
 	public static void generateExtentReport(){
-		Reporter.loadXMLConfig(new File("config/config.xml"));
+		//Reporter.loadXMLConfig(new File("config/config.xml"));
 	}
 	
 }
