@@ -18,12 +18,10 @@ public class CuponPdfElements {
 	@FindBy(xpath = "//a[contains(text(),'get coupon')]")
 	public WebElement getCupon;
 	
-	@FindBy(xpath = "//*[@id=\"plugin\"]")
-	public WebElement iFrame;
+	@FindBy(css = "body")
+	public WebElement backMainLink;
 	
 	
-	@FindBy(xpath = "//*[@id=\"icon\"]/iron-icon")
-	public WebElement downloadIcon;
 	
 	
 	

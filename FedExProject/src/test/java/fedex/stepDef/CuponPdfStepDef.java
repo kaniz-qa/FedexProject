@@ -14,7 +14,7 @@ public class CuponPdfStepDef {
 	}
 
 	@When("click on get cupon button")
-	public void click_on_get_cupon_button() {
+	public void click_on_get_cupon_button() throws InterruptedException {
 		cuponAct.getCupon();
 	    
 	}

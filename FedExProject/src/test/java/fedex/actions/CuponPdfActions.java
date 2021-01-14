@@ -2,6 +2,7 @@ package fedex.actions;
 
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.support.PageFactory;
 
 
@@ -38,18 +39,24 @@ public class CuponPdfActions {
 	}
 	
 
-	public void getCupon()  {		
+	public void getCupon() throws InterruptedException  {		
 		
 	cuponEle.getCupon.click();
-			
-	//String link = "https://www.fedex.com/content/dam/fedex/us-united-states/FedEx-Office/images/2020/Q4/FedEx_SameDay_City_New_Customer_Coupons_447271949.pdf";
-	//SetupDrivers.driver.get(link);
+	Thread.sleep(3000);
 	
-	SetupDrivers.driver.switchTo().frame(cuponEle.iFrame);
+	// new tab
 	
-	cuponEle.downloadIcon.click();
 	
-		
+	    String windowHandle = SetupDrivers.driver.getWindowHandle();
+	    SetupDrivers.driver.switchTo().window(windowHandle);
+	   
+	
+	
+	  
+	    cuponEle.backMainLink.sendKeys(Keys.CONTROL +"\t");
+	    SetupDrivers.driver.switchTo().defaultContent();
+	
+	
 	}
 	
 }
