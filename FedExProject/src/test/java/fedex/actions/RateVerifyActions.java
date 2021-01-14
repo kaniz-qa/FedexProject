@@ -52,11 +52,11 @@ public class RateVerifyActions {
 		rateEle.to.sendKeys(Keys.ARROW_DOWN);
 		Thread.sleep(3000);
 		rateEle.to.sendKeys(Keys.ENTER);
-		
+		rateEle.checkBox.isDisplayed();
 	}
 	
 	public void check() {
-		rateEle.checkBox.isDisplayed();
+		
 		rateEle.checkBox.click();
 		
 		//JavascriptExecutor js = (JavascriptExecutor)SetupDrivers.driver;
