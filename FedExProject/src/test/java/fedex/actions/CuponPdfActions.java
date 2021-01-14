@@ -45,15 +45,11 @@ public class CuponPdfActions {
 	Thread.sleep(3000);
 	
 	// new tab
-	
-	
+		
 	    String windowHandle = SetupDrivers.driver.getWindowHandle();
 	    SetupDrivers.driver.switchTo().window(windowHandle);
 	   
-	
-	
-	  
-	    cuponEle.backMainLink.sendKeys(Keys.CONTROL +"\t");
+		 cuponEle.backMainLink.sendKeys(Keys.CONTROL +"\t");
 	    SetupDrivers.driver.switchTo().defaultContent();
 	
 	
