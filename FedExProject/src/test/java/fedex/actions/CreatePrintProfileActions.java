@@ -6,6 +6,7 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
 
 import fedex.elements.CreatePrintProfileElements;
 import fedex.utilities.SetupDrivers;
@@ -61,6 +62,12 @@ public class CreatePrintProfileActions {
 		
 	}
 	
-	
+	public void errMsg() {
+		String msg = printProfile.errorMsg.getText();
+		
+		System.out.println(msg);
+		Assert.assertEquals(msg, true);
+		
+	}
 	
 }

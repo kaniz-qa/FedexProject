@@ -31,6 +31,7 @@ public class CreatePrintProfileStepDef {
 	@When("click on submit button")
 	public void click_on_submit_button() {
 		printProfileAction.submitButton();
+		printProfileAction.errMsg();
 	}
 
 	

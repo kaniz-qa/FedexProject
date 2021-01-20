@@ -57,5 +57,9 @@ public class CreatePrintProfileElements {
 	public WebElement submitBtn;
 	
 	
+	@FindBy(xpath = "//span[contains(text(),'This username already exists')]")
+	public WebElement errorMsg;
+	
+	
 	
 }

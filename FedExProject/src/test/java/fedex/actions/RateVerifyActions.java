@@ -38,7 +38,7 @@ public class RateVerifyActions {
 	
 	
 	public void from() throws InterruptedException {
-		rateEle.from.sendKeys("Norwich , CT , USA ");
+		rateEle.from.sendKeys("Jefferson Avenue 71, Bristol, 06010, United States ");
 		Thread.sleep(2000);
 		rateEle.from.sendKeys(Keys.ARROW_DOWN);
 		Thread.sleep(2000);
@@ -47,12 +47,21 @@ public class RateVerifyActions {
 	}
 	
 	public void to() throws InterruptedException {
-		rateEle.to.sendKeys("New York, New York, 10007, United States");
+		rateEle.to.sendKeys("Norwich, Connecticut, 06360, United States");
 		Thread.sleep(3000);
 		rateEle.to.sendKeys(Keys.ARROW_DOWN);
-		Thread.sleep(3000);
+		Thread.sleep(2000);
 		rateEle.to.sendKeys(Keys.ENTER);
+		
+		
+		
+		
 		rateEle.checkBox.isDisplayed();
+				
+		JavascriptExecutor js = (JavascriptExecutor)SetupDrivers.driver;
+		js.executeScript("arguments[0].click();", rateEle.checkBox);
+		
+		//rateEle.checkBox.isDisplayed();
 	}
 	
 	public void check() {

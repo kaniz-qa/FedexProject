@@ -17,7 +17,7 @@ public class RateVerifyElements {
 	@FindBy(xpath = "//input[@id='toGoogleAddress']")
 	public WebElement to;
 	
-	@FindBy(xpath = "//*[@id=\"shippingToResidenceAddressLabel\"]")
+	@FindBy(xpath = "//label[@id='shippingToResidenceAddressLabel']")
 	public WebElement checkBox;
 	
 	@FindBy(xpath = "//select[@id='package-details__package-type']")

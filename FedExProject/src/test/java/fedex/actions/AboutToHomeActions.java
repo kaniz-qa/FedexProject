@@ -40,6 +40,7 @@ public class AboutToHomeActions {
 		Thread.sleep(3000);
 		//SetupDrivers.driver.navigate().to("https://www.fedex.com/en-us/home.html");
 		SetupDrivers.driver.navigate().back();
+		SetupDrivers.driver.navigate().back();
 		
 	}
 	
